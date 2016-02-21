@@ -49,7 +49,7 @@ function equationService() {
 
   function generateEquationAddition(minResult, maxResult) {
     var first = getRandomInt(minResult, maxResult);
-    var second = getRandomInt(minResult, maxResult - first);
+    var second = getRandomInt(0, maxResult - first);
     return {type: 'A', first: first, second: second};
   }
 
