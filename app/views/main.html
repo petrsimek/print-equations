@@ -1,0 +1,20 @@
+<div id="form" class="hidden-print">
+<h2>Generování příkladů</h2>
+<form>
+  <div class="form-group">
+    <label for="total">Počet výsledků:</label>
+    <input ng-model="totalEquations" type="number" min="0" step="1" class="form-control" id="total">
+  </div>
+  <div class="form-group">
+    <label for="min-result">Minimální výsledek:</label>
+    <input ng-model="minResult" type="number" min="0" step="1" class="form-control" id="min-result">
+  </div>
+  <div class="form-group">
+    <label for="max-result">Maximální výsledek:</label>
+    <input ng-model="maxResult" type="number" min="0" step="1" class="form-control" id="max-result">
+  </div>
+  <p><a class="btn btn-lg btn-success" ng-click="getEquations()">Vygenerovat</a>
+  </p>
+</form>
+  </div>
+<equations-list list="equationsList"></equations-list>
