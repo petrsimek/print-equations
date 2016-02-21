@@ -131,6 +131,8 @@ body {
     border-bottom: thin dotted black;
 
   }
+  .page-break	{ display: none; }
+
 }
 
 @media print {
@@ -188,13 +190,7 @@ body {
   .header {
     border-bottom: none;
   }
-
-}
-
-@media all {
-  .page-break	{ display: none; }
-}
-
-@media print {
   .page-break	{ display: block; page-break-before: always; }
+
 }
+
