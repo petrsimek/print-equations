@@ -1,0 +1,8 @@
+<div>
+  <div class="col-sm-6 col-xs-4 col-lg-3 eq-block" ng-repeat-start="equations in groups track by $index">
+    <div ng-repeat="equation in equations">
+      <span ng-bind-html="equation | displayEquation"></span>
+    </div>
+  </div>
+  <div ng-repeat-end ng-if="($index + 1) % 12 == 0" class="page-break"></div>
+</div>
