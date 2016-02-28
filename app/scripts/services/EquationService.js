@@ -25,7 +25,7 @@ function equationService() {
       sign = '+';
     }
     else {
-      sign = '-';
+      sign = '&minus;';
     }
     return '<span class="eq-first">' + equation.first + '</span><span class="eq-action">' + sign + '</span><span class="eq-second">' + equation.second + '</span><span class="eq-eq">=</span><span class="eq-result">&nbsp;</span>';
   }
