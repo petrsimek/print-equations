@@ -15,11 +15,12 @@ mainCtrl.$inject = [
 ];
 
 function mainCtrl($scope, EquationService) {
-  $scope.totalEquations = 100;
+  $scope.totalEquations = 60;
   $scope.minResult = 0;
   $scope.maxResult = 10;
+  $scope.evalLimit = 5;
 
-    $scope.getEquations = function() {
-      $scope.equationsList = EquationService.getEquations($scope.totalEquations, $scope.minResult, $scope.maxResult);
-    }
+  $scope.getEquations = function() {
+    $scope.equationsList = EquationService.getEquations($scope.minResult, $scope.maxResult, $scope.evalLimit, $scope.totalEquations);
+  }
 }
