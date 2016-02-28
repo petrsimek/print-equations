@@ -17,6 +17,9 @@ Minimal value of addender/minuend or equation result
 The value of addender/minuend used as evaluation limit to assign equation to easy or complex groups. The equations are
 taken into result set by the specified scatter.
 
+## Demo
+[Demo on GitHub](http://petrsimek.github.io/print-equations/app)
+
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
