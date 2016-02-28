@@ -13,8 +13,13 @@
     <label for="max-result">Maximální výsledek:</label>
     <input ng-model="maxResult" type="number" min="0" step="1" class="form-control" id="max-result">
   </div>
+  <div class="form-group">
+    <label for="eval-limit">Úroveň nelehkých příkladů (od jakého sčítance/menšence je příklad považován za nelehký):</label>
+    <input ng-model="evalLimit" type="number" min="0" step="1" class="form-control" id="eval-limit">
+  </div>
   <p><a class="btn btn-lg btn-success" ng-click="getEquations()">Vygenerovat</a>
   </p>
 </form>
   </div>
+<h2 ng-show="equationsList.length>0">{{equationsList.length}} příkladů (+&minus;) od {{minResult}} do {{maxResult}} na den ...........</h2>
 <equations-list list="equationsList"></equations-list>
